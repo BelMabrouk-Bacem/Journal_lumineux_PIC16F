@@ -1,0 +1,223 @@
+CCS PCM C Compiler, Version 5.008, 5967               06-déc.-19 00:05
+
+               Filename:   C:\Users\bacem\Desktop\mastr\main.lst
+
+               ROM used:   162 words (16%)
+                           Largest free fragment is 862
+               RAM used:   11 (5%) at main() level
+                           12 (5%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   048
+0003:  NOP
+.................... #include <main.h> 
+.................... #include <16F627A.h> 
+.................... //////// Standard Header file for the PIC16F627A device //////////////// 
+.................... #device PIC16F627A 
+0004:  BCF    0A.0
+0005:  BCF    0A.1
+0006:  BCF    0A.2
+0007:  ADDWF  02,F
+0008:  RETLW  0E
+0009:  RETLW  04
+000A:  RETLW  04
+000B:  RETLW  04
+000C:  RETLW  04
+000D:  RETLW  04
+000E:  RETLW  0E
+000F:  CLRF   77
+0010:  CLRF   78
+0011:  MOVF   25,W
+0012:  BCF    03.0
+0013:  BTFSC  26.0
+0014:  ADDWF  77,F
+0015:  RRF    77,F
+0016:  RRF    78,F
+0017:  BTFSC  26.1
+0018:  ADDWF  77,F
+0019:  RRF    77,F
+001A:  RRF    78,F
+001B:  BTFSC  26.2
+001C:  ADDWF  77,F
+001D:  RRF    77,F
+001E:  RRF    78,F
+001F:  BTFSC  26.3
+0020:  ADDWF  77,F
+0021:  RRF    77,F
+0022:  RRF    78,F
+0023:  BTFSC  26.4
+0024:  ADDWF  77,F
+0025:  RRF    77,F
+0026:  RRF    78,F
+0027:  BTFSC  26.5
+0028:  ADDWF  77,F
+0029:  RRF    77,F
+002A:  RRF    78,F
+002B:  BTFSC  26.6
+002C:  ADDWF  77,F
+002D:  RRF    77,F
+002E:  RRF    78,F
+002F:  BTFSC  26.7
+0030:  ADDWF  77,F
+0031:  RRF    77,F
+0032:  RRF    78,F
+0033:  RETURN
+....................  
+.................... #list 
+....................  
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES NOBROWNOUT            	//No brownout reset 
+.................... #FUSES NOLVP                 	//No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+.................... #fuses NOWDT, XT, PUT, NOPROTECT 
+.................... #use delay(clock=20000000) 
+0034:  MOVLW  25
+0035:  MOVWF  04
+0036:  BCF    03.7
+0037:  MOVF   00,W
+0038:  BTFSC  03.2
+0039:  GOTO   047
+003A:  MOVLW  06
+003B:  MOVWF  78
+003C:  CLRF   77
+003D:  DECFSZ 77,F
+003E:  GOTO   03D
+003F:  DECFSZ 78,F
+0040:  GOTO   03C
+0041:  MOVLW  7B
+0042:  MOVWF  77
+0043:  DECFSZ 77,F
+0044:  GOTO   043
+0045:  DECFSZ 00,F
+0046:  GOTO   03A
+0047:  GOTO   093 (RETURN)
+....................  
+.................... //const char TEXT []={"       I"}; 
+.................... int i,j,k,DATA,s; 
+.................... //------------------------------------------------------------------ 
+....................  
+.................... const char TEXT[1][7] ={0x0E,0x04,0x04,0x04,0x04,0x04,0x0E};   
+.................... //------------------------------------------------------------------ 
+.................... void main() 
+0048:  MOVF   03,W
+0049:  ANDLW  1F
+004A:  MOVWF  03
+004B:  MOVLW  07
+004C:  MOVWF  1F
+004D:  BCF    03.7
+.................... {//setup_adc_ports(no_ANALOG); 
+....................  
+....................    OUTPUT_A(0x00);OUTPUT_B(0x00); 
+004E:  BSF    03.5
+004F:  CLRF   05
+0050:  BCF    03.5
+0051:  CLRF   05
+0052:  BSF    03.5
+0053:  CLRF   06
+0054:  BCF    03.5
+0055:  CLRF   06
+....................    while(TRUE) 
+....................    {  DATA=TEXT[i][j]; 
+0056:  MOVF   20,W
+0057:  MOVWF  25
+0058:  MOVLW  07
+0059:  MOVWF  26
+005A:  CALL   00F
+005B:  MOVF   21,W
+005C:  ADDWF  78,W
+005D:  CALL   004
+005E:  MOVWF  78
+005F:  MOVWF  23
+....................        for(j=0;j<8;j++) 
+0060:  CLRF   21
+0061:  MOVF   21,W
+0062:  SUBLW  07
+0063:  BTFSS  03.0
+0064:  GOTO   0A0
+....................        {  
+....................          DATA=TEXT[i][j]; 
+0065:  MOVF   20,W
+0066:  MOVWF  25
+0067:  MOVLW  07
+0068:  MOVWF  26
+0069:  CALL   00F
+006A:  MOVF   21,W
+006B:  ADDWF  78,W
+006C:  CALL   004
+006D:  MOVWF  78
+006E:  MOVWF  23
+....................          for(k=0;k<8;k++) 
+006F:  CLRF   22
+0070:  MOVF   22,W
+0071:  SUBLW  07
+0072:  BTFSS  03.0
+0073:  GOTO   08C
+....................            { 
+....................            OUTPUT_BIT(PIN_A1,shift_left(&DATA,1,0)); // Permet de mettre la pin (PIN_A1) à l'état logique (shift_left(&DATA,1,0)) --shift_left: Décalage à gauche de 1 positions de la variable « DATA » 
+0074:  BCF    03.0
+0075:  RLF    23,F
+0076:  BTFSC  03.0
+0077:  GOTO   07A
+0078:  BCF    05.1
+0079:  GOTO   07B
+007A:  BSF    05.1
+007B:  BSF    03.5
+007C:  BCF    05.1
+....................            if(k>=1){OUTPUT_HIGH(PIN_A0);OUTPUT_LOW (PIN_A0);} 
+007D:  BCF    03.5
+007E:  MOVF   22,W
+007F:  SUBLW  00
+0080:  BTFSC  03.0
+0081:  GOTO   08A
+0082:  BSF    03.5
+0083:  BCF    05.0
+0084:  BCF    03.5
+0085:  BSF    05.0
+0086:  BSF    03.5
+0087:  BCF    05.0
+0088:  BCF    03.5
+0089:  BCF    05.0
+008A:  INCF   22,F
+008B:  GOTO   070
+....................            } 
+....................  
+....................        OUTPUT_HIGH(PIN_A2); //Permet de mettre à 1 la pin (PIN_A2) 
+008C:  BSF    03.5
+008D:  BCF    05.2
+008E:  BCF    03.5
+008F:  BSF    05.2
+....................        delay_ms(5);         //Temporisation de 5 secondes 
+0090:  MOVLW  05
+0091:  MOVWF  25
+0092:  GOTO   034
+....................        OUTPUT_LOW (PIN_A2); //Permet de mettre à 0 la pin (PIN_A2) 
+0093:  BSF    03.5
+0094:  BCF    05.2
+0095:  BCF    03.5
+0096:  BCF    05.2
+....................        OUTPUT_B(s+=1);      //La valeur s+=1 est envoyée sur le port B 
+0097:  MOVLW  01
+0098:  ADDWF  24,F
+0099:  BSF    03.5
+009A:  CLRF   06
+009B:  BCF    03.5
+009C:  MOVF   24,W
+009D:  MOVWF  06
+009E:  INCF   21,F
+009F:  GOTO   061
+....................        } 
+00A0:  GOTO   056
+....................    } 
+.................... } 
+00A1:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F21   NOWDT PUT XT MCLR NOBROWNOUT NOLVP NOCPD NOPROTECT

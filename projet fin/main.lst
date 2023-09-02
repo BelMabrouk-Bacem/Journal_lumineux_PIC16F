@@ -1,0 +1,1136 @@
+CCS PCM C Compiler, Version 5.008, 5967               08-déc.-19 19:55
+
+               Filename:   C:\Users\bacem\Desktop\mastr\projet fin\main.lst
+
+               ROM used:   957 words (12%)
+                           Largest free fragment is 2048
+               RAM used:   15 (4%) at main() level
+                           17 (5%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  03
+0001:  MOVWF  0A
+0002:  GOTO   304
+0003:  NOP
+.................... #include <main.h> 
+.................... #include <16F877A.h> 
+.................... //////// Standard Header file for the PIC16F877A device //////////////// 
+.................... #device PIC16F877A 
+0004:  BCF    0A.0
+0005:  BCF    0A.1
+0006:  BCF    0A.2
+0007:  ADDWF  02,F
+0008:  RETLW  20
+0009:  RETLW  20
+000A:  RETLW  20
+000B:  RETLW  20
+000C:  RETLW  20
+000D:  RETLW  20
+000E:  RETLW  20
+000F:  RETLW  49
+0010:  RETLW  53
+0011:  RETLW  49
+0012:  RETLW  4D
+0013:  RETLW  47
+0014:  RETLW  20
+0015:  RETLW  00
+0016:  BCF    0A.0
+0017:  BCF    0A.1
+0018:  BCF    0A.2
+0019:  ADDWF  02,F
+001A:  RETLW  FF
+001B:  RETLW  FF
+001C:  RETLW  FF
+001D:  RETLW  FF
+001E:  RETLW  FF
+001F:  RETLW  FF
+0020:  RETLW  FF
+0021:  RETLW  FB
+0022:  RETLW  FB
+0023:  RETLW  FB
+0024:  RETLW  FB
+0025:  RETLW  FB
+0026:  RETLW  FF
+0027:  RETLW  FB
+0028:  RETLW  F5
+0029:  RETLW  F5
+002A:  RETLW  F5
+002B:  RETLW  FF
+002C:  RETLW  FF
+002D:  RETLW  FF
+002E:  RETLW  FF
+002F:  RETLW  F5
+0030:  RETLW  F5
+0031:  RETLW  E0
+0032:  RETLW  F5
+0033:  RETLW  E0
+0034:  RETLW  F5
+0035:  RETLW  F5
+0036:  RETLW  FB
+0037:  RETLW  F0
+0038:  RETLW  EB
+0039:  RETLW  F1
+003A:  RETLW  FA
+003B:  RETLW  E1
+003C:  RETLW  FB
+003D:  RETLW  E3
+003E:  RETLW  EA
+003F:  RETLW  E5
+0040:  RETLW  FB
+0041:  RETLW  F4
+0042:  RETLW  EA
+0043:  RETLW  F8
+0044:  RETLW  F7
+0045:  RETLW  EB
+0046:  RETLW  EB
+0047:  RETLW  F7
+0048:  RETLW  EA
+0049:  RETLW  ED
+004A:  RETLW  F2
+004B:  RETLW  F9
+004C:  RETLW  F9
+004D:  RETLW  FD
+004E:  RETLW  FB
+004F:  RETLW  FF
+0050:  RETLW  FF
+0051:  RETLW  FF
+0052:  RETLW  FD
+0053:  RETLW  FB
+0054:  RETLW  F7
+0055:  RETLW  F7
+0056:  RETLW  F7
+0057:  RETLW  FB
+0058:  RETLW  FD
+0059:  RETLW  F7
+005A:  RETLW  FB
+005B:  RETLW  FD
+005C:  RETLW  FD
+005D:  RETLW  FD
+005E:  RETLW  FB
+005F:  RETLW  F7
+0060:  RETLW  FB
+0061:  RETLW  EA
+0062:  RETLW  F1
+0063:  RETLW  FB
+0064:  RETLW  F1
+0065:  RETLW  EA
+0066:  RETLW  FB
+0067:  RETLW  FF
+0068:  RETLW  FB
+0069:  RETLW  FB
+006A:  RETLW  E0
+006B:  RETLW  FB
+006C:  RETLW  FB
+006D:  RETLW  FF
+006E:  RETLW  FF
+006F:  RETLW  FF
+0070:  RETLW  FF
+0071:  RETLW  F3
+0072:  RETLW  F3
+0073:  RETLW  FB
+0074:  RETLW  F7
+0075:  RETLW  FF
+0076:  RETLW  FF
+0077:  RETLW  FF
+0078:  RETLW  F1
+0079:  RETLW  FF
+007A:  RETLW  FF
+007B:  RETLW  FF
+007C:  RETLW  FF
+007D:  RETLW  FF
+007E:  RETLW  FF
+007F:  RETLW  FF
+0080:  RETLW  FF
+0081:  RETLW  F3
+0082:  RETLW  F3
+0083:  RETLW  FF
+0084:  RETLW  FE
+0085:  RETLW  FD
+0086:  RETLW  FB
+0087:  RETLW  F7
+0088:  RETLW  EF
+0089:  RETLW  FF
+008A:  RETLW  F1
+008B:  RETLW  EE
+008C:  RETLW  EC
+008D:  RETLW  EA
+008E:  RETLW  E6
+008F:  RETLW  EE
+0090:  RETLW  F1
+0091:  RETLW  FB
+0092:  RETLW  F3
+0093:  RETLW  FB
+0094:  RETLW  FB
+0095:  RETLW  FB
+0096:  RETLW  FB
+0097:  RETLW  F1
+0098:  RETLW  F1
+0099:  RETLW  EE
+009A:  RETLW  FE
+009B:  RETLW  F1
+009C:  RETLW  EF
+009D:  RETLW  EF
+009E:  RETLW  E0
+009F:  RETLW  F1
+00A0:  RETLW  EE
+00A1:  RETLW  FE
+00A2:  RETLW  F9
+00A3:  RETLW  FE
+00A4:  RETLW  EE
+00A5:  RETLW  F1
+00A6:  RETLW  FD
+00A7:  RETLW  F9
+00A8:  RETLW  F5
+00A9:  RETLW  ED
+00AA:  RETLW  E0
+00AB:  RETLW  FD
+00AC:  RETLW  FD
+00AD:  RETLW  E0
+00AE:  RETLW  EF
+00AF:  RETLW  E1
+00B0:  RETLW  FE
+00B1:  RETLW  FE
+00B2:  RETLW  FE
+00B3:  RETLW  E1
+00B4:  RETLW  F9
+00B5:  RETLW  F7
+00B6:  RETLW  EF
+00B7:  RETLW  E1
+00B8:  RETLW  EE
+00B9:  RETLW  EE
+00BA:  RETLW  F1
+00BB:  RETLW  E0
+00BC:  RETLW  FE
+00BD:  RETLW  FD
+00BE:  RETLW  FB
+00BF:  RETLW  F7
+00C0:  RETLW  F7
+00C1:  RETLW  F7
+00C2:  RETLW  F1
+00C3:  RETLW  EE
+00C4:  RETLW  EE
+00C5:  RETLW  F1
+00C6:  RETLW  EE
+00C7:  RETLW  EE
+00C8:  RETLW  F1
+00C9:  RETLW  F1
+00CA:  RETLW  EE
+00CB:  RETLW  EE
+00CC:  RETLW  F0
+00CD:  RETLW  FE
+00CE:  RETLW  FD
+00CF:  RETLW  F3
+00D0:  RETLW  FF
+00D1:  RETLW  F3
+00D2:  RETLW  F3
+00D3:  RETLW  FF
+00D4:  RETLW  F3
+00D5:  RETLW  F3
+00D6:  RETLW  FF
+00D7:  RETLW  F3
+00D8:  RETLW  FB
+00D9:  RETLW  F3
+00DA:  RETLW  F3
+00DB:  RETLW  FF
+00DC:  RETLW  F3
+00DD:  RETLW  F3
+00DE:  RETLW  FD
+00DF:  RETLW  FB
+00E0:  RETLW  F7
+00E1:  RETLW  EF
+00E2:  RETLW  F7
+00E3:  RETLW  FB
+00E4:  RETLW  FD
+00E5:  RETLW  FF
+00E6:  RETLW  FF
+00E7:  RETLW  F1
+00E8:  RETLW  FF
+00E9:  RETLW  F1
+00EA:  RETLW  FF
+00EB:  RETLW  FF
+00EC:  RETLW  F7
+00ED:  RETLW  FB
+00EE:  RETLW  FD
+00EF:  RETLW  FE
+00F0:  RETLW  FD
+00F1:  RETLW  FB
+00F2:  RETLW  F7
+00F3:  RETLW  F1
+00F4:  RETLW  EE
+00F5:  RETLW  FE
+00F6:  RETLW  FD
+00F7:  RETLW  FB
+00F8:  RETLW  FF
+00F9:  RETLW  FB
+00FA:  NOP
+00FB:  BSF    0A.0
+00FC:  BCF    0A.1
+00FD:  BCF    0A.2
+00FE:  ADDLW  02
+00FF:  BTFSC  03.0
+0100:  INCF   0A,F
+0101:  MOVWF  02
+0102:  RETLW  F1
+0103:  RETLW  EE
+0104:  RETLW  FE
+0105:  RETLW  F2
+0106:  RETLW  EA
+0107:  RETLW  EA
+0108:  RETLW  F1
+0109:  RETLW  FB
+010A:  RETLW  F5
+010B:  RETLW  EE
+010C:  RETLW  EE
+010D:  RETLW  E0
+010E:  RETLW  EE
+010F:  RETLW  EE
+0110:  RETLW  E1
+0111:  RETLW  F6
+0112:  RETLW  F6
+0113:  RETLW  F1
+0114:  RETLW  F6
+0115:  RETLW  F6
+0116:  RETLW  E1
+0117:  RETLW  F1
+0118:  RETLW  EE
+0119:  RETLW  EF
+011A:  RETLW  EF
+011B:  RETLW  EF
+011C:  RETLW  EE
+011D:  RETLW  F1
+011E:  RETLW  E1
+011F:  RETLW  F6
+0120:  RETLW  F6
+0121:  RETLW  F6
+0122:  RETLW  F6
+0123:  RETLW  F6
+0124:  RETLW  E1
+0125:  RETLW  E0
+0126:  RETLW  EF
+0127:  RETLW  EF
+0128:  RETLW  E3
+0129:  RETLW  EF
+012A:  RETLW  EF
+012B:  RETLW  E0
+012C:  RETLW  E0
+012D:  RETLW  EF
+012E:  RETLW  EF
+012F:  RETLW  E3
+0130:  RETLW  EF
+0131:  RETLW  EF
+0132:  RETLW  EF
+0133:  RETLW  F1
+0134:  RETLW  EE
+0135:  RETLW  EF
+0136:  RETLW  E8
+0137:  RETLW  EE
+0138:  RETLW  EE
+0139:  RETLW  F1
+013A:  RETLW  EE
+013B:  RETLW  EE
+013C:  RETLW  EE
+013D:  RETLW  E0
+013E:  RETLW  EE
+013F:  RETLW  EE
+0140:  RETLW  EE
+0141:  RETLW  F1
+0142:  RETLW  FB
+0143:  RETLW  FB
+0144:  RETLW  FB
+0145:  RETLW  FB
+0146:  RETLW  FB
+0147:  RETLW  F1
+0148:  RETLW  F8
+0149:  RETLW  FD
+014A:  RETLW  FD
+014B:  RETLW  FD
+014C:  RETLW  FD
+014D:  RETLW  FD
+014E:  RETLW  F3
+014F:  RETLW  EE
+0150:  RETLW  ED
+0151:  RETLW  EB
+0152:  RETLW  E7
+0153:  RETLW  EB
+0154:  RETLW  ED
+0155:  RETLW  EE
+0156:  RETLW  EF
+0157:  RETLW  EF
+0158:  RETLW  EF
+0159:  RETLW  EF
+015A:  RETLW  EF
+015B:  RETLW  EF
+015C:  RETLW  E0
+015D:  RETLW  EE
+015E:  RETLW  E4
+015F:  RETLW  EA
+0160:  RETLW  EA
+0161:  RETLW  EE
+0162:  RETLW  EE
+0163:  RETLW  EE
+0164:  RETLW  EE
+0165:  RETLW  E6
+0166:  RETLW  EA
+0167:  RETLW  EC
+0168:  RETLW  EE
+0169:  RETLW  EE
+016A:  RETLW  EE
+016B:  RETLW  F1
+016C:  RETLW  EE
+016D:  RETLW  EE
+016E:  RETLW  EE
+016F:  RETLW  EE
+0170:  RETLW  EE
+0171:  RETLW  F1
+0172:  RETLW  E1
+0173:  RETLW  EE
+0174:  RETLW  EE
+0175:  RETLW  E1
+0176:  RETLW  EF
+0177:  RETLW  EF
+0178:  RETLW  EF
+0179:  RETLW  F1
+017A:  RETLW  EE
+017B:  RETLW  EE
+017C:  RETLW  EE
+017D:  RETLW  EA
+017E:  RETLW  ED
+017F:  RETLW  F2
+0180:  RETLW  E1
+0181:  RETLW  EE
+0182:  RETLW  EE
+0183:  RETLW  E1
+0184:  RETLW  EB
+0185:  RETLW  ED
+0186:  RETLW  EE
+0187:  RETLW  F1
+0188:  RETLW  EE
+0189:  RETLW  EF
+018A:  RETLW  F1
+018B:  RETLW  FE
+018C:  RETLW  EE
+018D:  RETLW  F1
+018E:  RETLW  E0
+018F:  RETLW  FB
+0190:  RETLW  FB
+0191:  RETLW  FB
+0192:  RETLW  FB
+0193:  RETLW  FB
+0194:  RETLW  FB
+0195:  RETLW  EE
+0196:  RETLW  EE
+0197:  RETLW  EE
+0198:  RETLW  EE
+0199:  RETLW  EE
+019A:  RETLW  EE
+019B:  RETLW  F1
+019C:  RETLW  EE
+019D:  RETLW  EE
+019E:  RETLW  EE
+019F:  RETLW  F5
+01A0:  RETLW  F5
+01A1:  RETLW  FB
+01A2:  RETLW  FB
+01A3:  RETLW  EE
+01A4:  RETLW  EE
+01A5:  RETLW  EE
+01A6:  RETLW  EA
+01A7:  RETLW  EA
+01A8:  RETLW  E4
+01A9:  RETLW  EE
+01AA:  RETLW  EE
+01AB:  RETLW  EE
+01AC:  RETLW  F5
+01AD:  RETLW  FB
+01AE:  RETLW  F5
+01AF:  RETLW  EE
+01B0:  RETLW  EE
+01B1:  RETLW  EE
+01B2:  RETLW  EE
+01B3:  RETLW  F5
+01B4:  RETLW  FB
+01B5:  RETLW  FB
+01B6:  RETLW  FB
+01B7:  RETLW  FB
+01B8:  RETLW  E0
+01B9:  RETLW  FE
+01BA:  RETLW  FD
+01BB:  RETLW  FB
+01BC:  RETLW  F7
+01BD:  RETLW  EF
+01BE:  RETLW  E0
+01BF:  RETLW  F1
+01C0:  RETLW  F7
+01C1:  RETLW  F7
+01C2:  RETLW  F7
+01C3:  RETLW  F7
+01C4:  RETLW  F7
+01C5:  RETLW  F1
+01C6:  RETLW  FF
+01C7:  RETLW  EF
+01C8:  RETLW  F7
+01C9:  RETLW  FB
+01CA:  RETLW  FD
+01CB:  RETLW  FE
+01CC:  RETLW  FF
+01CD:  RETLW  F1
+01CE:  RETLW  FD
+01CF:  RETLW  FD
+01D0:  RETLW  FD
+01D1:  RETLW  FD
+01D2:  RETLW  FD
+01D3:  RETLW  F1
+01D4:  RETLW  FB
+01D5:  RETLW  F5
+01D6:  RETLW  EE
+01D7:  RETLW  FF
+01D8:  RETLW  FF
+01D9:  RETLW  FF
+01DA:  RETLW  FF
+01DB:  RETLW  FF
+01DC:  RETLW  FF
+01DD:  RETLW  FF
+01DE:  RETLW  FF
+01DF:  RETLW  FF
+01E0:  RETLW  FF
+01E1:  RETLW  E0
+01E2:  BSF    0A.0
+01E3:  BCF    0A.1
+01E4:  BCF    0A.2
+01E5:  ADDLW  E9
+01E6:  BTFSC  03.0
+01E7:  INCF   0A,F
+01E8:  MOVWF  02
+01E9:  RETLW  F3
+01EA:  RETLW  F3
+01EB:  RETLW  F7
+01EC:  RETLW  FB
+01ED:  RETLW  FF
+01EE:  RETLW  FF
+01EF:  RETLW  FF
+01F0:  RETLW  FF
+01F1:  RETLW  FF
+01F2:  RETLW  F1
+01F3:  RETLW  FE
+01F4:  RETLW  F0
+01F5:  RETLW  EE
+01F6:  RETLW  F1
+01F7:  RETLW  EF
+01F8:  RETLW  EF
+01F9:  RETLW  E9
+01FA:  RETLW  E6
+01FB:  RETLW  EE
+01FC:  RETLW  E6
+01FD:  RETLW  E9
+01FE:  RETLW  FF
+01FF:  RETLW  FF
+0200:  RETLW  F8
+0201:  RETLW  F7
+0202:  RETLW  F7
+0203:  RETLW  F7
+0204:  RETLW  F8
+0205:  RETLW  FE
+0206:  RETLW  FE
+0207:  RETLW  F2
+0208:  RETLW  EC
+0209:  RETLW  EE
+020A:  RETLW  EC
+020B:  RETLW  F2
+020C:  RETLW  FF
+020D:  RETLW  FF
+020E:  RETLW  F1
+020F:  RETLW  EE
+0210:  RETLW  E0
+0211:  RETLW  EF
+0212:  RETLW  F1
+0213:  RETLW  F9
+0214:  RETLW  F6
+0215:  RETLW  F7
+0216:  RETLW  E1
+0217:  RETLW  F7
+0218:  RETLW  F7
+0219:  RETLW  F7
+021A:  RETLW  FF
+021B:  RETLW  FF
+021C:  RETLW  F0
+021D:  RETLW  EE
+021E:  RETLW  F0
+021F:  RETLW  FE
+0220:  RETLW  F1
+0221:  RETLW  EF
+0222:  RETLW  EF
+0223:  RETLW  E9
+0224:  RETLW  E6
+0225:  RETLW  EE
+0226:  RETLW  EE
+0227:  RETLW  EE
+0228:  RETLW  FB
+0229:  RETLW  FF
+022A:  RETLW  F3
+022B:  RETLW  FB
+022C:  RETLW  FB
+022D:  RETLW  FB
+022E:  RETLW  F1
+022F:  RETLW  FD
+0230:  RETLW  FF
+0231:  RETLW  F9
+0232:  RETLW  FD
+0233:  RETLW  FD
+0234:  RETLW  FD
+0235:  RETLW  F3
+0236:  RETLW  F7
+0237:  RETLW  F7
+0238:  RETLW  F6
+0239:  RETLW  F5
+023A:  RETLW  F3
+023B:  RETLW  F5
+023C:  RETLW  F6
+023D:  RETLW  F3
+023E:  RETLW  FB
+023F:  RETLW  FB
+0240:  RETLW  FB
+0241:  RETLW  FB
+0242:  RETLW  FB
+0243:  RETLW  F1
+0244:  RETLW  FF
+0245:  RETLW  FF
+0246:  RETLW  E5
+0247:  RETLW  EA
+0248:  RETLW  EA
+0249:  RETLW  EA
+024A:  RETLW  EA
+024B:  RETLW  FF
+024C:  RETLW  FF
+024D:  RETLW  E9
+024E:  RETLW  E6
+024F:  RETLW  EE
+0250:  RETLW  EE
+0251:  RETLW  EE
+0252:  RETLW  FF
+0253:  RETLW  FF
+0254:  RETLW  F1
+0255:  RETLW  EE
+0256:  RETLW  EE
+0257:  RETLW  EE
+0258:  RETLW  F1
+0259:  RETLW  FF
+025A:  RETLW  FF
+025B:  RETLW  E1
+025C:  RETLW  EE
+025D:  RETLW  E1
+025E:  RETLW  EF
+025F:  RETLW  EF
+0260:  RETLW  FF
+0261:  RETLW  FF
+0262:  RETLW  F0
+0263:  RETLW  EE
+0264:  RETLW  F0
+0265:  RETLW  FE
+0266:  RETLW  FE
+0267:  RETLW  FF
+0268:  RETLW  FF
+0269:  RETLW  E9
+026A:  RETLW  E6
+026B:  RETLW  EF
+026C:  RETLW  EF
+026D:  RETLW  EF
+026E:  RETLW  FF
+026F:  RETLW  FF
+0270:  RETLW  F0
+0271:  RETLW  EF
+0272:  RETLW  F1
+0273:  RETLW  FE
+0274:  RETLW  E1
+0275:  RETLW  FB
+0276:  RETLW  FB
+0277:  RETLW  F0
+0278:  RETLW  FB
+0279:  RETLW  FB
+027A:  RETLW  FB
+027B:  RETLW  FC
+027C:  RETLW  FF
+027D:  RETLW  FF
+027E:  RETLW  EE
+027F:  RETLW  EE
+0280:  RETLW  EE
+0281:  RETLW  EC
+0282:  RETLW  F2
+0283:  RETLW  FF
+0284:  RETLW  FF
+0285:  RETLW  EE
+0286:  RETLW  EE
+0287:  RETLW  EE
+0288:  RETLW  F5
+0289:  RETLW  FB
+028A:  RETLW  FF
+028B:  RETLW  FF
+028C:  RETLW  EE
+028D:  RETLW  EE
+028E:  RETLW  EA
+028F:  RETLW  EA
+0290:  RETLW  F4
+0291:  RETLW  FF
+0292:  RETLW  FF
+0293:  RETLW  EE
+0294:  RETLW  F5
+0295:  RETLW  FB
+0296:  RETLW  F5
+0297:  RETLW  EE
+0298:  RETLW  FF
+0299:  RETLW  FF
+029A:  RETLW  EE
+029B:  RETLW  F5
+029C:  RETLW  FB
+029D:  RETLW  FB
+029E:  RETLW  F3
+029F:  RETLW  FF
+02A0:  RETLW  FF
+02A1:  RETLW  E0
+02A2:  RETLW  FD
+02A3:  RETLW  FB
+02A4:  RETLW  F7
+02A5:  RETLW  E0
+02A6:  RETLW  F9
+02A7:  RETLW  F7
+02A8:  RETLW  F7
+02A9:  RETLW  E7
+02AA:  RETLW  F7
+02AB:  RETLW  F7
+02AC:  RETLW  F9
+02AD:  RETLW  FB
+02AE:  RETLW  FB
+02AF:  RETLW  FB
+02B0:  RETLW  FF
+02B1:  RETLW  FB
+02B2:  RETLW  FB
+02B3:  RETLW  FB
+02B4:  RETLW  F3
+02B5:  RETLW  FD
+02B6:  RETLW  FD
+02B7:  RETLW  FC
+02B8:  RETLW  FD
+02B9:  RETLW  FD
+02BA:  RETLW  F3
+02BB:  RETLW  F5
+02BC:  RETLW  EA
+02BD:  RETLW  FF
+02BE:  RETLW  FF
+02BF:  RETLW  FF
+02C0:  RETLW  FF
+02C1:  RETLW  FF
+02C2:  RETLW  00
+02C3:  RETLW  00
+02C4:  RETLW  00
+02C5:  RETLW  00
+02C6:  RETLW  00
+02C7:  RETLW  00
+02C8:  RETLW  00
+02C9:  CLRF   77
+02CA:  CLRF   78
+02CB:  MOVF   2A,W
+02CC:  BCF    03.0
+02CD:  BTFSC  2B.0
+02CE:  ADDWF  77,F
+02CF:  RRF    77,F
+02D0:  RRF    78,F
+02D1:  BTFSC  2B.1
+02D2:  ADDWF  77,F
+02D3:  RRF    77,F
+02D4:  RRF    78,F
+02D5:  BTFSC  2B.2
+02D6:  ADDWF  77,F
+02D7:  RRF    77,F
+02D8:  RRF    78,F
+02D9:  BTFSC  2B.3
+02DA:  ADDWF  77,F
+02DB:  RRF    77,F
+02DC:  RRF    78,F
+02DD:  BTFSC  2B.4
+02DE:  ADDWF  77,F
+02DF:  RRF    77,F
+02E0:  RRF    78,F
+02E1:  BTFSC  2B.5
+02E2:  ADDWF  77,F
+02E3:  RRF    77,F
+02E4:  RRF    78,F
+02E5:  BTFSC  2B.6
+02E6:  ADDWF  77,F
+02E7:  RRF    77,F
+02E8:  RRF    78,F
+02E9:  BTFSC  2B.7
+02EA:  ADDWF  77,F
+02EB:  RRF    77,F
+02EC:  RRF    78,F
+02ED:  RETURN
+....................  
+.................... #list 
+....................  
+.................... #device ADC=16 
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES NOBROWNOUT            	//No brownout reset 
+.................... #FUSES NOLVP                 	//No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+.................... #fuses NOWDT, XT, PUT, NOPROTECT 
+.................... #use delay(clock=20000000) 
+02EE:  MOVLW  28
+02EF:  MOVWF  04
+02F0:  BCF    03.7
+02F1:  MOVF   00,W
+02F2:  BTFSC  03.2
+02F3:  GOTO   301
+02F4:  MOVLW  06
+02F5:  MOVWF  78
+02F6:  CLRF   77
+02F7:  DECFSZ 77,F
+02F8:  GOTO   2F7
+02F9:  DECFSZ 78,F
+02FA:  GOTO   2F6
+02FB:  MOVLW  7B
+02FC:  MOVWF  77
+02FD:  DECFSZ 77,F
+02FE:  GOTO   2FD
+02FF:  DECFSZ 00,F
+0300:  GOTO   2F4
+0301:  BCF    0A.3
+0302:  BCF    0A.4
+0303:  GOTO   39A (RETURN)
+....................  
+.................... const char TEXT []={"       ISIMG "}; 
+....................  
+.................... int i,j,k,d,n,m,s,DATA; 
+.................... //------------------------------------------------------------------ 
+.................... const char FONT1[32][7] ={ 
+....................    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,   //        Space 
+....................    0xFB,0xFB,0xFB,0xFB,0xFB,0xFF,0xFB,   //        ! 
+....................    0xF5,0xF5,0xF5,0xFF,0xFF,0xFF,0xFF,   //        " 
+....................    0xF5,0xF5,0xE0,0xF5,0xE0,0xF5,0xF5,   //        # 
+....................    0xFB,0xF0,0xEB,0xF1,0xFA,0xE1,0xFB,   //        $ 
+....................    0xE3,0xEA,0xE5,0xFB,0xF4,0xEA,0xF8,   //        % 
+....................    0xF7,0xEB,0xEB,0xF7,0xEA,0xED,0xF2,   //        & 
+....................    0xF9,0xF9,0xFD,0xFB,0xFF,0xFF,0xFF,   //        ' 
+....................    0xFD,0xFB,0xF7,0xF7,0xF7,0xFB,0xFD,   //        ( 
+....................    0xF7,0xFB,0xFD,0xFD,0xFD,0xFB,0xF7,   //        ) 
+....................    0xFB,0xEA,0xF1,0xFB,0xF1,0xEA,0xFB,   //        * 
+....................    0xFF,0xFB,0xFB,0xE0,0xFB,0xFB,0xFF,   //        + 
+....................    0xFF,0xFF,0xFF,0xF3,0xF3,0xFB,0xF7,   //        , 
+....................    0xFF,0xFF,0xFF,0xF1,0xFF,0xFF,0xFF,   //        - 
+....................    0xFF,0xFF,0xFF,0xFF,0xFF,0xF3,0xF3,   //        . 
+....................    0xFF,0xFE,0xFD,0xFB,0xF7,0xEF,0xFF,   //        / 
+....................    0xF1,0xEE,0xEC,0xEA,0xE6,0xEE,0xF1,   //        0 
+....................    0xFB,0xF3,0xFB,0xFB,0xFB,0xFB,0xF1,   //        1 
+....................    0xF1,0xEE,0xFE,0xF1,0xEF,0xEF,0xE0,   //        2 
+....................    0xF1,0xEE,0xFE,0xF9,0xFE,0xEE,0xF1,   //        3 
+....................    0xFD,0xF9,0xF5,0xED,0xE0,0xFD,0xFD,   //        4 
+....................    0xE0,0xEF,0xE1,0xFE,0xFE,0xFE,0xE1,   //        5 
+....................    0xF9,0xF7,0xEF,0xE1,0xEE,0xEE,0xF1,   //        6 
+....................    0xE0,0xFE,0xFD,0xFB,0xF7,0xF7,0xF7,   //        7 
+....................    0xF1,0xEE,0xEE,0xF1,0xEE,0xEE,0xF1,   //        8 
+....................    0xF1,0xEE,0xEE,0xF0,0xFE,0xFD,0xF3,   //        9 
+....................    0xFF,0xF3,0xF3,0xFF,0xF3,0xF3,0xFF,   //        : 
+....................    0xF3,0xFB,0xF3,0xF3,0xFF,0xF3,0xF3,   //        ;         
+....................    0xFD,0xFB,0xF7,0xEF,0xF7,0xFB,0xFD,   //        < 
+....................    0xFF,0xFF,0xF1,0xFF,0xF1,0xFF,0xFF,   //        = 
+....................    0xF7,0xFB,0xFD,0xFE,0xFD,0xFB,0xF7,   //        > 
+....................    0xF1,0xEE,0xFE,0xFD,0xFB,0xFF,0xFB};  //        ? 
+....................  
+.................... const char FONT2[32][7] ={ 
+....................    0xF1,0xEE,0xFE,0xF2,0xEA,0xEA,0xF1,   //        @ 
+....................    0xFB,0xF5,0xEE,0xEE,0xE0,0xEE,0xEE,   //        A 
+....................    0xE1,0xF6,0xF6,0xF1,0xF6,0xF6,0xE1,   //        B 
+....................    0xF1,0xEE,0xEF,0xEF,0xEF,0xEE,0xF1,   //        C 
+....................    0xE1,0xF6,0xF6,0xF6,0xF6,0xF6,0xE1,   //        D 
+....................    0xE0,0xEF,0xEF,0xE3,0xEF,0xEF,0xE0,   //        E 
+....................    0xE0,0xEF,0xEF,0xE3,0xEF,0xEF,0xEF,   //        F 
+....................    0xF1,0xEE,0xEF,0xE8,0xEE,0xEE,0xF1,   //        G 
+....................    0xEE,0xEE,0xEE,0xE0,0xEE,0xEE,0xEE,   //        H 
+....................    0xF1,0xFB,0xFB,0xFB,0xFB,0xFB,0xF1,   //        I 
+....................    0xF8,0xFD,0xFD,0xFD,0xFD,0xFD,0xF3,   //        J 
+....................    0xEE,0xED,0xEB,0xE7,0xEB,0xED,0xEE,   //        K 
+....................    0xEF,0xEF,0xEF,0xEF,0xEF,0xEF,0xE0,   //        L 
+....................    0xEE,0xE4,0xEA,0xEA,0xEE,0xEE,0xEE,   //        M 
+....................    0xEE,0xE6,0xEA,0xEC,0xEE,0xEE,0xEE,   //        N 
+....................    0xF1,0xEE,0xEE,0xEE,0xEE,0xEE,0xF1,   //        O 
+....................    0xE1,0xEE,0xEE,0xE1,0xEF,0xEF,0xEF,   //        P 
+....................    0xF1,0xEE,0xEE,0xEE,0xEA,0xED,0xF2,   //        Q 
+....................    0xE1,0xEE,0xEE,0xE1,0xEB,0xED,0xEE,   //        R   
+....................    0xF1,0xEE,0xEF,0xF1,0xFE,0xEE,0xF1,   //        S 
+....................    0xE0,0xFB,0xFB,0xFB,0xFB,0xFB,0xFB,   //        T 
+....................    0xEE,0xEE,0xEE,0xEE,0xEE,0xEE,0xF1,   //        U 
+....................    0xEE,0xEE,0xEE,0xF5,0xF5,0xFB,0xFB,   //        V 
+....................    0xEE,0xEE,0xEE,0xEA,0xEA,0xE4,0xEE,   //        W 
+....................    0xEE,0xEE,0xF5,0xFB,0xF5,0xEE,0xEE,   //        X 
+....................    0xEE,0xEE,0xF5,0xFB,0xFB,0xFB,0xFB,   //        Y 
+....................    0xE0,0xFE,0xFD,0xFB,0xF7,0xEF,0xE0,   //        Z 
+....................    0xF1,0xF7,0xF7,0xF7,0xF7,0xF7,0xF1,   //        [ 
+....................    0xFF,0xEF,0xF7,0xFB,0xFD,0xFE,0xFF,   //        \ 
+....................    0xF1,0xFD,0xFD,0xFD,0xFD,0xFD,0xF1,   //        [ 
+....................    0xFB,0xF5,0xEE,0xFF,0xFF,0xFF,0xFF,   //        ^ 
+....................    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xE0};  //        _ 
+....................  
+.................... const char FONT3[32][7] ={ 
+....................    0xF3,0xF3,0xF7,0xFB,0xFF,0xFF,0xFF,   //        ` 
+....................    0xFF,0xFF,0xF1,0xFE,0xF0,0xEE,0xF1,   //        a 
+....................    0xEF,0xEF,0xE9,0xE6,0xEE,0xE6,0xE9,   //        b 
+....................    0xFF,0xFF,0xF8,0xF7,0xF7,0xF7,0xF8,   //        c 
+....................    0xFE,0xFE,0xF2,0xEC,0xEE,0xEC,0xF2,   //        d 
+....................    0xFF,0xFF,0xF1,0xEE,0xE0,0xEF,0xF1,   //        e 
+....................    0xF9,0xF6,0xF7,0xE1,0xF7,0xF7,0xF7,   //        f 
+....................    0xFF,0xFF,0xF0,0xEE,0xF0,0xFE,0xF1,   //        g 
+....................    0xEF,0xEF,0xE9,0xE6,0xEE,0xEE,0xEE,   //        h 
+....................    0xFB,0xFF,0xF3,0xFB,0xFB,0xFB,0xF1,   //        i 
+....................    0xFD,0xFF,0xF9,0xFD,0xFD,0xFD,0xF3,   //        j 
+....................    0xF7,0xF7,0xF6,0xF5,0xF3,0xF5,0xF6,   //        k 
+....................    0xF3,0xFB,0xFB,0xFB,0xFB,0xFB,0xF1,   //        l 
+....................    0xFF,0xFF,0xE5,0xEA,0xEA,0xEA,0xEA,   //        m 
+....................    0xFF,0xFF,0xE9,0xE6,0xEE,0xEE,0xEE,   //        n 
+....................    0xFF,0xFF,0xF1,0xEE,0xEE,0xEE,0xF1,   //        o 
+....................    0xFF,0xFF,0xE1,0xEE,0xE1,0xEF,0xEF,   //        p 
+....................    0xFF,0xFF,0xF0,0xEE,0xF0,0xFE,0xFE,   //        q 
+....................    0xFF,0xFF,0xE9,0xE6,0xEF,0xEF,0xEF,   //        r 
+....................    0xFF,0xFF,0xF0,0xEF,0xF1,0xFE,0xE1,   //        s 
+....................    0xFB,0xFB,0xF0,0xFB,0xFB,0xFB,0xFC,   //        t 
+....................    0xFF,0xFF,0xEE,0xEE,0xEE,0xEC,0xF2,   //        u 
+....................    0xFF,0xFF,0xEE,0xEE,0xEE,0xF5,0xFB,   //        v 
+....................    0xFF,0xFF,0xEE,0xEE,0xEA,0xEA,0xF4,   //        w 
+....................    0xFF,0xFF,0xEE,0xF5,0xFB,0xF5,0xEE,   //        x 
+....................    0xFF,0xFF,0xEE,0xF5,0xFB,0xFB,0xF3,   //        y 
+....................    0xFF,0xFF,0xE0,0xFD,0xFB,0xF7,0xE0,   //        z 
+....................    0xF9,0xF7,0xF7,0xE7,0xF7,0xF7,0xF9,   //        { 
+....................    0xFB,0xFB,0xFB,0xFF,0xFB,0xFB,0xFB,   //        | 
+....................    0xF3,0xFD,0xFD,0xFC,0xFD,0xFD,0xF3,   //        } 
+....................    0xF5,0xEA,0xFF,0xFF,0xFF,0xFF,0xFF};  //        ~ 
+.................... //------------------------------------------------------------------ 
+.................... void main() 
+0304:  MOVF   03,W
+0305:  ANDLW  1F
+0306:  MOVWF  03
+0307:  BSF    03.5
+0308:  BSF    1F.0
+0309:  BSF    1F.1
+030A:  BSF    1F.2
+030B:  BCF    1F.3
+030C:  MOVLW  07
+030D:  MOVWF  1C
+030E:  BCF    03.7
+.................... {//setup_adc_ports(no_ANALOG); 
+....................  
+....................  
+....................  
+....................  
+....................    OUTPUT_A(0x00);OUTPUT_B(0x00); 
+030F:  CLRF   05
+0310:  BCF    03.5
+0311:  CLRF   05
+0312:  BSF    03.5
+0313:  CLRF   06
+0314:  BCF    03.5
+0315:  CLRF   06
+....................    while(TRUE) 
+....................    { 
+....................        for(j=0;j<8;j++) 
+0316:  CLRF   21
+0317:  MOVF   21,W
+0318:  SUBLW  07
+0319:  BTFSS  03.0
+031A:  GOTO   3A7
+....................        {       
+....................        for(i=d;i<d+8;i++) 
+031B:  MOVF   23,W
+031C:  MOVWF  20
+031D:  MOVLW  08
+031E:  ADDWF  23,W
+031F:  SUBWF  20,W
+0320:  BTFSC  03.0
+0321:  GOTO   380
+....................          { 
+....................          if (TEXT [i]<='?')DATA=~FONT1[TEXT [i]-' '][j];else 
+0322:  MOVF   20,W
+0323:  CALL   004
+0324:  SUBLW  3F
+0325:  BTFSS  03.0
+0326:  GOTO   336
+0327:  MOVF   20,W
+0328:  CALL   004
+0329:  ADDLW  E0
+032A:  MOVWF  29
+032B:  MOVWF  2A
+032C:  MOVLW  07
+032D:  MOVWF  2B
+032E:  CALL   2C9
+032F:  MOVF   21,W
+0330:  ADDWF  78,W
+0331:  CALL   016
+0332:  MOVWF  78
+0333:  MOVWF  27
+0334:  COMF   27,F
+0335:  GOTO   35D
+....................          if (TEXT [i]<='_')DATA=~FONT2[TEXT [i]-'@'][j];else 
+0336:  MOVF   20,W
+0337:  CALL   004
+0338:  SUBLW  5F
+0339:  BTFSS  03.0
+033A:  GOTO   34A
+033B:  MOVF   20,W
+033C:  CALL   004
+033D:  ADDLW  C0
+033E:  MOVWF  29
+033F:  MOVWF  2A
+0340:  MOVLW  07
+0341:  MOVWF  2B
+0342:  CALL   2C9
+0343:  MOVF   21,W
+0344:  ADDWF  78,W
+0345:  CALL   0FA
+0346:  MOVWF  78
+0347:  MOVWF  27
+0348:  COMF   27,F
+0349:  GOTO   35D
+....................          if (TEXT [i]<='~')DATA=~FONT3[TEXT [i]-'`'][j]; 
+034A:  MOVF   20,W
+034B:  CALL   004
+034C:  SUBLW  7E
+034D:  BTFSS  03.0
+034E:  GOTO   35D
+034F:  MOVF   20,W
+0350:  CALL   004
+0351:  ADDLW  A0
+0352:  MOVWF  29
+0353:  MOVWF  2A
+0354:  MOVLW  07
+0355:  MOVWF  2B
+0356:  CALL   2C9
+0357:  MOVF   21,W
+0358:  ADDWF  78,W
+0359:  CALL   1E2
+035A:  MOVWF  78
+035B:  MOVWF  27
+035C:  COMF   27,F
+....................          if(j==7)DATA=0x00; 
+035D:  MOVF   21,W
+035E:  SUBLW  07
+035F:  BTFSC  03.2
+0360:  CLRF   27
+....................          for(k=0;k<8;k++) 
+0361:  CLRF   22
+0362:  MOVF   22,W
+0363:  SUBLW  07
+0364:  BTFSS  03.0
+0365:  GOTO   37E
+....................            { 
+....................            OUTPUT_BIT(PIN_A1,shift_left(&DATA,1,0)); // Permet de mettre la pin (PIN_A1) à l'état logique (shift_left(&DATA,1,0)) --shift_left: Décalage à gauche de 1 positions de la variable « DATA » 
+0366:  BCF    03.0
+0367:  RLF    27,F
+0368:  BTFSC  03.0
+0369:  GOTO   36C
+036A:  BCF    05.1
+036B:  GOTO   36D
+036C:  BSF    05.1
+036D:  BSF    03.5
+036E:  BCF    05.1
+....................            if(k>=2){OUTPUT_HIGH(PIN_A0);OUTPUT_LOW (PIN_A0);} 
+036F:  BCF    03.5
+0370:  MOVF   22,W
+0371:  SUBLW  01
+0372:  BTFSC  03.0
+0373:  GOTO   37C
+0374:  BSF    03.5
+0375:  BCF    05.0
+0376:  BCF    03.5
+0377:  BSF    05.0
+0378:  BSF    03.5
+0379:  BCF    05.0
+037A:  BCF    03.5
+037B:  BCF    05.0
+037C:  INCF   22,F
+037D:  GOTO   362
+....................            }  
+037E:  INCF   20,F
+037F:  GOTO   31D
+....................          } 
+....................  OUTPUT_LOW (PIN_A1); 
+0380:  BSF    03.5
+0381:  BCF    05.1
+0382:  BCF    03.5
+0383:  BCF    05.1
+.................... for(k=0;k<n;k++){OUTPUT_HIGH(PIN_A0);OUTPUT_LOW (PIN_A0);} 
+0384:  CLRF   22
+0385:  MOVF   24,W
+0386:  SUBWF  22,W
+0387:  BTFSC  03.0
+0388:  GOTO   393
+0389:  BSF    03.5
+038A:  BCF    05.0
+038B:  BCF    03.5
+038C:  BSF    05.0
+038D:  BSF    03.5
+038E:  BCF    05.0
+038F:  BCF    03.5
+0390:  BCF    05.0
+0391:  INCF   22,F
+0392:  GOTO   385
+....................  // 
+....................        OUTPUT_HIGH(PIN_A2); //Permet de mettre à 1 la pin (PIN_A2) 
+0393:  BSF    03.5
+0394:  BCF    05.2
+0395:  BCF    03.5
+0396:  BSF    05.2
+....................        delay_ms(5);         //Temporisation de 5 secondes 
+0397:  MOVLW  05
+0398:  MOVWF  28
+0399:  GOTO   2EE
+....................        OUTPUT_LOW (PIN_A2); //Permet de mettre à 0 la pin (PIN_A2) 
+039A:  BSF    03.5
+039B:  BCF    05.2
+039C:  BCF    03.5
+039D:  BCF    05.2
+....................        OUTPUT_B(s+=1);      //La valeur s+=1 est envoyée sur le port B 
+039E:  MOVLW  01
+039F:  ADDWF  26,F
+03A0:  BSF    03.5
+03A1:  CLRF   06
+03A2:  BCF    03.5
+03A3:  MOVF   26,W
+03A4:  MOVWF  06
+03A5:  INCF   21,F
+03A6:  GOTO   317
+....................        } 
+....................        m+=1; 
+03A7:  MOVLW  01
+03A8:  ADDWF  25,F
+....................        if(m==5){m=0;n+=1;}; 
+03A9:  MOVF   25,W
+03AA:  SUBLW  05
+03AB:  BTFSS  03.2
+03AC:  GOTO   3B0
+03AD:  CLRF   25
+03AE:  MOVLW  01
+03AF:  ADDWF  24,F
+....................        if(n==6){n=0;d+=1;} 
+03B0:  MOVF   24,W
+03B1:  SUBLW  06
+03B2:  BTFSS  03.2
+03B3:  GOTO   3B7
+03B4:  CLRF   24
+03B5:  MOVLW  01
+03B6:  ADDWF  23,F
+....................        if(d==12)d=0; 
+03B7:  MOVF   23,W
+03B8:  SUBLW  0C
+03B9:  BTFSC  03.2
+03BA:  CLRF   23
+03BB:  GOTO   316
+....................         
+....................    } 
+.................... } 
+.................... //------------------------------------------------------------------ 
+03BC:  SLEEP
+....................  
+
+Configuration Fuses:
+   Word  1: 3F31   XT NOWDT PUT NOBROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

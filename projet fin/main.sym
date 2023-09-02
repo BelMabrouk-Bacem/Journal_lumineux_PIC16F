@@ -1,0 +1,79 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     i
+021     j
+022     k
+023     d
+024     n
+025     m
+026     s
+027     data
+028     @delay_ms2.P1
+028     main.@SCRATCH1
+029     main.@SCRATCH2
+02A     @MUL88.P1
+02B     @MUL88.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  TEXT.call
+000008  TEXT.data
+000016  FONT1.call
+00001A  FONT1.data
+0000FA  FONT2.call
+000102  FONT2.data
+0001E2  FONT3.call
+0001E9  FONT3.data
+0002C9  @MUL88
+0002EE  @delay_ms2
+000304  main
+000304  @cinit1
+00030E  @cinit2
+
+Project Directory:
+    C:\Users\bacem\Desktop\mastr\projet fin\
+
+Project Files:
+    main.c                                                  [08-déc.-19 19:55  CRC=270C7D37]
+    main.h                                                  [08-déc.-19 19:54  CRC=CF12E969]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [03-juil.-13 14:28  CRC=4E65664C]
+
+Source signature=92EA3338
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

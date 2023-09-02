@@ -1,0 +1,16 @@
+읕main
+   읕main  0/185  Ram=2
+      쳐@cinit1  (Inline)  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@MUL88  0/37  Ram=2
+      쳐@const634  0/228  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@MUL88  0/37  Ram=2
+      쳐@const638  0/232  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@const623  0/18  Ram=0
+      쳐@MUL88  0/37  Ram=2
+      쳐@const642  0/231  Ram=0
+      읕@delay_ms2  0/22  Ram=1
